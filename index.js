@@ -20,5 +20,7 @@ return fetch ('http://localhost:3000/users', {
   document.body.innerHTML = object["id"]
 })
 
-
+.catch(function(error){
+  document.body.innerHTML = error.message
+})
 }
