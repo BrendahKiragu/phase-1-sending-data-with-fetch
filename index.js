@@ -12,4 +12,13 @@ return fetch ('http://localhost:3000/users', {
   })
 })
 
+.then(function(res){
+  return res.json()
+})
+
+.then(function(object){
+  document.body.innerHTML = object["id"]
+})
+
+
 }
